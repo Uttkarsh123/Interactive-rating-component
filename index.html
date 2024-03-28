@@ -27,17 +27,18 @@
 </head>
 
 <body>
-  <div class="rating_state">
+  <div class="rating_state"  id="rating_div">
     <div>
       <div id="Star_comp">
         <img src="./images/icon-star.svg" alt="" srcset="">
       </div>
       <h2>How did we do?</h2>
     </div>
-    <p>
-      Please let us know how we did with your support<br> request. All feedback is appreciated to help us <br> improve
-      our offering!
-    </p>
+    <div id="msg">
+      <p>Please let us know how we did with your support</p>
+      <p>request. All feedback is appreciated to help us</p>
+      <p>improve our offering!</p>
+    </div>
     <div class="rating_parent">
       <div class="rating_comp">
         <label class="container">1
@@ -65,14 +66,17 @@
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
+  <div class="rating_state thankyou_state"  style=" display: none;">
+      <div style="text-align: center;">
+         <img src="./images/illustration-thank-you.svg" alt="" srcset="">
+      </div>
+      <div class="thankyou_comp">
+         <span id="rating_selected"></span>
+         <h2>Thank you!</h2>
+         <p>We appreciate you taking the time to give a rating.<br>If you ever need more support,
+          don’t hesitate to <br> get in touch!</p>
+      </div>
+  </div>
   <!-- Thank you state end -->
 
 

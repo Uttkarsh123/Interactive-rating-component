@@ -1,5 +1,5 @@
 body {
-    /* background-color: hsl(216, 12%, 8%); */
+    background-color: rgba(20,21,25,255);
     margin:0px;
     padding:0px;
     font-family: overpass;
@@ -10,12 +10,19 @@ body {
     color:white;
 }
 .rating_state {
-    background-color: hsl(213, 19%, 18%);
+    background-image: linear-gradient(hsl(201, 22%, 20%),hsl(240, 22%, 20%));
     padding: 20px;
     border-radius: 15px;
     display:flex;
     flex-direction: column;
-    max-width:365px;
+}
+.rating_state p{
+    font-size: 15px;
+    font-family: overpass;
+    margin:3px;
+}
+#msg{
+    margin-bottom: 18px;
 }
 h2 {
     color: hsl(0, 0%, 100%);
@@ -43,7 +50,7 @@ h2 {
 }
 .rating_parent .container
 {
-    background-color: hsl(216, 12%, 54%);
+    background-color:#4c5454;
     padding:10px;
     height:20px;
     width:20px;
@@ -61,4 +68,28 @@ h2 {
     border-radius: 15px;
     font-family: overpass;
     font-weight: 700;
+}
+.thankyou_comp
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.thankyou_comp h2{
+    margin-bottom: 0;
+}
+.thankyou_comp p{
+    color:hsl(217, 12%, 63%);
+}
+#rating_selected{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border:1px solid #4c5454;
+    padding:5px 8px 5px 8px;
+    border-radius: 20px;
+    background-color:#4c5454;
+    color:hsl(25, 97%, 53%);
+    font-size:12px;
 }
